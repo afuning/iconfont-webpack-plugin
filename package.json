@@ -1,0 +1,28 @@
+{
+  "name": "iconfont-webpack-plugin",
+  "version": "1.0.0",
+  "description": "iconfont webpack plugin",
+  "main": "index.js",
+  "scripts": {
+    "example": "webpack -d --config example/webpack.config --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afuning/iconfont-webpack-plugin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afuning/iconfont-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/afuning/iconfont-webpack-plugin#readme",
+  "devDependencies": {
+    "chalk": "^4.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "ora": "^4.0.5",
+    "request": "^2.88.2",
+    "safe-require": "^1.0.4",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
