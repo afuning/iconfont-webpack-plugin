@@ -49,6 +49,10 @@ function getFontUrl(key) {
 function getCssUrl(key) {
   return `${origin}${key}.css`
 }
+// 获取js资源地址
+function getJsUrl(key) {
+  return `${origin}${key}.js`
+}
 // 获取生成地址
 function getPath(root, dir) {
   return path.join(root, dir);
@@ -58,6 +62,7 @@ module.exports = {
   download,
   getCssUrl,
   getFontUrl,
+  getJsUrl,
   // 生成文件
   insertFile,
   getPath

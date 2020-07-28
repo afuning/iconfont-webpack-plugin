@@ -4,7 +4,9 @@
   "description": "iconfont webpack plugin",
   "main": "index.js",
   "scripts": {
-    "example": "webpack -d --config example/webpack.config --progress --colors"
+    "example": "webpack -d --config example/webpack.config --progress --colors",
+    "example:dev-fontclass": "webpack-dev-server -d --config example/webpack.dev-fontclass.config",
+    "example:dev-svg": "webpack-dev-server -d --config example/webpack.dev-svg.config"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
     "request": "^2.88.2",
     "safe-require": "^1.0.4",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }

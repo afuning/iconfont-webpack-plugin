@@ -15,7 +15,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'index.html'
+      template: 'index.html',
+      filename: 'index.html',
     }),
     new IconfontPlugin({
       key: "font_1238539_zmfljpqtw7"
