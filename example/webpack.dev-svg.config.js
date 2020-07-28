@@ -29,7 +29,7 @@ module.exports = {
       type: 'svg',
       key: 'font_1238539_32r8c9ul8x2',
       baseOption: {
-        fontFamily: 'afuning'
+        mainClass: 'afuning'
       },
       dist: {
         dirPath: "icon",

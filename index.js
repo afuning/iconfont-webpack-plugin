@@ -13,6 +13,7 @@ class IconfontPlugin{
       type: 'fontclass',
       key: '',
       baseOption: {
+        mainClass: 'afuning',
         fontFamily: 'afuning',
         fontSize: '20px'
       },
@@ -105,7 +106,7 @@ class IconfontPlugin{
       },
       svg: {
         async run() {
-          me.cssContent = `.${baseOption.fontFamily} {
+          me.cssContent = `.${baseOption.mainClass} {
             width: 24px;
             height: 24px;
             vertical-align: -0.15em;
