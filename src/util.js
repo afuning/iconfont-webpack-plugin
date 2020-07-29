@@ -1,5 +1,5 @@
 const request = require("request")
-const fs = require("fs")
+// const fs = require("fs")
 const path = require("path")
 const chalk = require("chalk")
 const { origin, fontTyps } = require("./config")
@@ -15,30 +15,30 @@ function download(url) {
   })
 }
 // 获取资源到新文件中
-function rwFile(url, dist) {
-  request.get(url).pipe(fs.createWriteStream(dist));
-}
+// function rwFile(url, dist) {
+//   request.get(url).pipe(fs.createWriteStream(dist));
+// }
 // 生成文件
-function insertFile(staticPath, filename, content) {
-  if (!fs.existsSync(staticPath)) {
-    fs.mkdirSync(staticPath)
-  } else {
-    // 删除文件夹中同后缀文件
-    const extname = path.extname(filename);
-    delFile(staticPath, `.*\.${extname}`);
-  }
-  fs.writeFileSync(getPath(staticPath, filename), content)
-}
-// 删除文件
-function delFile(dir, pattern = "") {
-  const files = fs.readdirSync(dir);
-  let reg = new RegExp(pattern)
-  files.forEach((filename, index) => {
-    if (reg.test(filename)) {
-      fs.unlinkSync(getPath(dir, filename))
-    }
-  })
-}
+// function insertFile(staticPath, filename, content) {
+//   if (!fs.existsSync(staticPath)) {
+//     fs.mkdirSync(staticPath)
+//   } else {
+//     // 删除文件夹中同后缀文件
+//     const extname = path.extname(filename);
+//     delFile(staticPath, `.*\.${extname}`);
+//   }
+//   fs.writeFileSync(getPath(staticPath, filename), content)
+// }
+// // 删除文件
+// function delFile(dir, pattern = "") {
+//   const files = fs.readdirSync(dir);
+//   let reg = new RegExp(pattern)
+//   files.forEach((filename, index) => {
+//     if (reg.test(filename)) {
+//       fs.unlinkSync(getPath(dir, filename))
+//     }
+//   })
+// }
 // 获取font资源地址
 function getFontUrl(key) {
   return fontTyps.map((type) => {
@@ -64,6 +64,6 @@ module.exports = {
   getFontUrl,
   getJsUrl,
   // 生成文件
-  insertFile,
+  // insertFile,
   getPath
 }

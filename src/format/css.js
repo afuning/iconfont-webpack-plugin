@@ -42,7 +42,6 @@ class CssModule {
     const oldMainClass = this.mainClass
     const { mainClass } = this.option
     const reg = new RegExp(`\\.${oldMainClass}`)
-    console.log(oldMainClass, mainClass, reg)
     this.content = this.content.replace(reg, `.${mainClass}`)
   }
 
