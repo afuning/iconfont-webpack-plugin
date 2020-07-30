@@ -29,6 +29,7 @@ module.exports = {
       type: 'fontclass',
       key: 'font_1238539_zmfljpqtw7',
       baseOption: {
+        mainClass: 'afuning',
         fontFamily: 'afuning',
         fontSize: '22px'
       },
